@@ -13,15 +13,16 @@
 <body>
   <main class="flex p-8">
     <section class="calculation grid grid-cols-3 flex-1">
+      
       <div class="triangle-calculation flex flex-col items-center">
         <img src="images/triangle.png" alt="">
         <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
           <h2 class="text-xl">Triangle</h2>
           <p class="text-center text-3xl">Area = 0.5 &times; b &times; h</p>
           <form action="" class="flex items-center gap-2  text-2xl">
-            <input class="w-24 p-2 rounded-sm" type="text" id="triangle-base" placeholder="b">
+            <input class="w-24 p-2 rounded-sm" type="text" id="triangle-base" placeholder="base">
             <p>cm</p>
-            <input class="w-24 p-2 rounded-sm ml-3" type="text" id="triangle-height" placeholder="h">
+            <input class="w-24 p-2 rounded-sm ml-3" type="text" id="triangle-height" placeholder="height">
             <p>cm</p>
           </form> 
           <h2 class="text-2xl">Area: <span id="triangle-area"></span>&nbsp;cm<sup>2</sup></h2>
@@ -29,82 +30,87 @@
         </div>
       </div>
 
+      <div class="rectangle-calculation flex flex-col items-center">
+        <img src="images/rectangle.png" alt="">
+        <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
+          <h2 class="text-xl">Rectangle</h2>
+          <p class="text-center text-3xl">Area = l &times; w</p>
 
+          <form action="" class="flex items-center gap-2  text-2xl">
+            <input class="w-24 p-2 rounded-sm" type="text" id="rectangle-length" placeholder="length">
+            <p>cm</p>
+            <input class="w-24 p-2 rounded-sm ml-3" type="text" id="rectangle-width" placeholder="width">
+            <p>cm</p>
+          </form> 
+          <h2 class="text-2xl">Area: <span id="rectangle-area"></span>&nbsp;cm<sup>2</sup></h2>
+          <button class="btn btn-primary" id="rectangle-calculate-btn">Calculate</button>
 
+        </div>
+      </div>
 
-      <div class="triangle-calculation flex flex-col items-center">
-        <img src="images/triangle.png" alt="">
+      <div class="parallelogram-calculation flex flex-col items-center">
+        <img src="images/parallelogram.png" alt="">
         <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
-          <h2 class="">Triangle</h2>
-          <p class="text-center text-3xl">Area = 0.5 &times; b &times; h</p>
+          <h2 class="text-xl">Parallelogram</h2>
+          <p class="text-center text-3xl">Area = b &times; h</p>
+
           <form action="" class="flex items-center gap-2  text-2xl">
-            <input class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+            <input class="w-24 p-2 rounded-sm" type="text" id="parallelogram-base" placeholder="base">
             <p>cm</p>
-            <input class="w-24 p-2 rounded-sm ml-3" type="text" name="" id="" placeholder="h">
+            <input class="w-24 p-2 rounded-sm ml-3" type="text" id="parallelogram-height" placeholder="height">
             <p>cm</p>
-          </form>
-          <h2 class="text-2xl">Area: <span id="triangle-area"></span>cm<sup>2</sup></h2>
-          <button class="btn btn-primary">Calculate</button>
+          </form> 
+          <h2 class="text-2xl">Area: <span id="parallelogram-area"></span>&nbsp;cm<sup>2</sup></h2>
+          <button class="btn btn-primary" id="parallelogram-calculate-btn">Calculate</button>
+
         </div>
       </div>
-      <div class="triangle-calculation flex flex-col items-center">
-        <img src="images/triangle.png" alt="">
+
+      <div class="rhombus-calculation flex flex-col items-center">
+        <img src="images/rhombus.png" alt="">
         <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
-          <h2 class="">Triangle</h2>
-          <p class="text-center text-3xl">Area = 0.5 &times; b &times; h</p>
+          <h2 class="text-xl">Rhombus</h2>
+          <p class="text-center text-3xl">Area = b &times; h</p>
           <form action="" class="flex items-center gap-2  text-2xl">
-            <input class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+            <input class="w-24 p-2 rounded-sm" type="text" id="rhombus-base" placeholder="base">
             <p>cm</p>
-            <input class="w-24 p-2 rounded-sm ml-3" type="text" name="" id="" placeholder="h">
+            <input class="w-24 p-2 rounded-sm ml-3" type="text" id="rhombus-height" placeholder="height">
             <p>cm</p>
-          </form>
-          <h2 class="text-2xl">Area: <span id="triangle-area"></span>cm<sup>2</sup></h2>
-          <button class="btn btn-primary">Calculate</button>
+          </form> 
+          <h2 class="text-2xl">Area: <span id="rhombus-area"></span>&nbsp;cm<sup>2</sup></h2>
+          <button class="btn btn-primary" id="rhombus-calculate-btn">Calculate</button>
         </div>
       </div>
-      <div class="triangle-calculation flex flex-col items-center">
-        <img src="images/triangle.png" alt="">
+
+      <div class="rhombus-calculation flex flex-col items-center">
+        <img src="images/rhombus.png" alt="">
         <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
-          <h2 class="">Triangle</h2>
-          <p class="text-center text-3xl">Area = 0.5 &times; b &times; h</p>
+          <h2 class="text-xl">Rhombus</h2>
+          <p class="text-center text-3xl">Area = b &times; h</p>
           <form action="" class="flex items-center gap-2  text-2xl">
-            <input class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+            <input class="w-24 p-2 rounded-sm" type="text" id="rhombus-base" placeholder="base">
             <p>cm</p>
-            <input class="w-24 p-2 rounded-sm ml-3" type="text" name="" id="" placeholder="h">
+            <input class="w-24 p-2 rounded-sm ml-3" type="text" id="rhombus-height" placeholder="height">
             <p>cm</p>
-          </form>
-          <h2 class="text-2xl">Area: <span id="triangle-area"></span>cm<sup>2</sup></h2>
-          <button class="btn btn-primary">Calculate</button>
+          </form> 
+          <h2 class="text-2xl">Area: <span id="rhombus-area"></span>&nbsp;cm<sup>2</sup></h2>
+          <button class="btn btn-primary" id="rhombus-calculate-btn">Calculate</button>
         </div>
       </div>
-      <div class="triangle-calculation flex flex-col items-center">
-        <img src="images/triangle.png" alt="">
+
+      <div class="pentagon-calculation flex flex-col items-center">
+        <img src="images/pentagon.png" alt="">
         <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
-          <h2 class="">Triangle</h2>
-          <p class="text-center text-3xl">Area = 0.5 &times; b &times; h</p>
+          <h2 class="text-xl">Pentagon</h2>
+          <p class="text-center text-3xl">Area = b &times; h</p>
+
           <form action="" class="flex items-center gap-2  text-2xl">
-            <input class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+            <input class="w-24 p-2 rounded-sm" type="text" id="pentagon-side" placeholder="base">
             <p>cm</p>
-            <input class="w-24 p-2 rounded-sm ml-3" type="text" name="" id="" placeholder="h">
-            <p>cm</p>
-          </form>
-          <h2 class="text-2xl">Area: <span id="triangle-area"></span>cm<sup>2</sup></h2>
-          <button class="btn btn-primary">Calculate</button>
-        </div>
-      </div>
-      <div class="triangle-calculation flex flex-col items-center">
-        <img src="images/triangle.png" alt="">
-        <div class="calculation-measure-result flex flex-col gap-[10px] p-8">
-          <h2 class="">Triangle</h2>
-          <p class="text-center text-3xl">Area = 0.5 &times; b &times; h</p>
-          <form action="" class="flex items-center gap-2  text-2xl">
-            <input class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
-            <p>cm</p>
-            <input class="w-24 p-2 rounded-sm ml-3" type="text" name="" id="" placeholder="h">
-            <p>cm</p>
-          </form>
-          <h2 class="text-2xl">Area: <span id="triangle-area"></span>cm<sup>2</sup></h2>
-          <button class="btn btn-primary">Calculate</button>
+          </form> 
+          <h2 class="text-2xl">Area: <span id="parallelogram-area"></span>&nbsp;cm<sup>2</sup></h2>
+          <button class="btn btn-primary" id="parallelogram-calculate-btn">Calculate</button>
+
         </div>
       </div>
     </section>
@@ -114,6 +120,10 @@
     </section>
   </main>
   <script src="javascripts/triangleArea.js"></script>
+  <script src="javascripts/rectangle.js"></script>
+  <script src="javascripts/parallelogram.js"></script>
+  <script src="javascripts/rhombus.js"></script>
+  <script src="javascripts/pentagon.js"></script>
 </body>
 
 </html>
