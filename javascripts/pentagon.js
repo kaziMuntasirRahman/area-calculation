@@ -1,7 +1,7 @@
-function parallelogramArea() {
-  const base = parseFloat(document.getElementById('parallelogram-base').value);
-  const height = parseFloat(document.getElementById('parallelogram-height').value);
-  document.getElementById('parallelogram-area').innerText = base*height;
+function pentagonArea() {
+  const a = parseFloat(document.getElementById('pentagon-side').value);
+  let area = document.getElementById('pentagon-area');
+  area.innerHTML = (0.25*Math.sqrt(5*(5+2*Math.sqrt(5)))*a*a).toFixed(2);
 }
 
-document.getElementById('parallelogram-calculate-btn').addEventListener('click', parallelogramArea);
+document.getElementById('pentagon-calculate-btn').addEventListener('click', pentagonArea);
